@@ -1,0 +1,7 @@
+#!/bin/sh
+# Usage: script/test
+# Executes the test suite via xctool
+
+cd "$(dirname "$0")/.."
+
+vendor/xctool/xctool.sh -project XctoolTest.xcodeproj -scheme XctoolTest -sdk iphonesimulator test
